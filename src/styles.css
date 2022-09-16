@@ -1,0 +1,180 @@
+.reader_wrapper {
+    margin: 1em 0;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .wrapper {
+    height: 100%;
+    width: 8em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .player_main_control {
+    display: flex;
+    flex: 0 0 55px;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    background-color: hsla(217, 89%, 61%, 1);
+    color: white;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+      rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    z-index: 1;
+  }
+  
+  .control_play_pause {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .control_icon__play {
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .read_spectrum__pause {
+    width: 800px;
+    transition: 3s all ease-in;
+  }
+  
+  .read_spectrum__play {
+    width: 0%;
+    overflow: hidden;
+    transition: 3s all ease-out;
+  }
+  
+  .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 0.2em;
+  }
+  
+  .wave {
+    height: 55px;
+    width: 55px;
+    fill: #fff;
+    margin-left: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line_1 {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+  }
+  
+  .line_2 {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  
+  .line_3 {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+  }
+  
+  .line_4 {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .line_5 {
+    -webkit-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      transform: scaleY(1);
+      transform-origin: 50% 50%;
+    }
+    50% {
+      transform: scaleY(0.7);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: 50% 50%;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scaleY(1);
+      transform-origin: 50% 50%;
+    }
+    50% {
+      transform: scaleY(0.7);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: 50% 50%;
+    }
+  }
+  
+  .read_spectrum_container {
+    position: relative;
+    z-index: 0;
+    margin-left: -2.5em;
+    height: 52px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+      rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  }
+  
+  .read_spectrum_container.open {
+    width: 100%;
+    transition: 0.3s all ease-out;
+  }
+  
+  .read_spectrum_container.closed {
+    width: 0%;
+    overflow: hidden;
+    transition: 0.3s all ease-in;
+  }
+  
+  .player_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin-left: 2em;
+  }
+  
+  .player_container p {
+    margin: 0 1em;
+  }
